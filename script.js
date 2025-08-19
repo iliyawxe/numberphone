@@ -40,6 +40,11 @@ addPersonBtn.addEventListener("click", function(){
 btnClose.addEventListener("click", function(){
     box2.classList.remove("show")
 });
+document.body.addEventListener("click", function(e){
+   if(e.target === search || e.target === document.body){
+    box2.classList.remove("show")
+   }
+});
 addBtn.addEventListener("click",add);
 box2.addEventListener("keyup",function(e){
     if(e.key === "Enter"){
