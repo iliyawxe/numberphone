@@ -6,9 +6,20 @@
     <title>phone book</title>
     <link rel="stylesheet" href="bootstrap.rtl.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div id="box1" class="box1">
+        <div class="search-box">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="جستجو..."
+                    />
+                    <button type="button">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                  </div>
         <table>
             <thead>
                 <tr>
@@ -27,253 +38,14 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>
-                        1
-                    </td>
-                    <td>
-                        ایلیا
-                    </td>
-                    <td>
-                        امانی
-                    </td>
-                    </td>
-                    <td>
-                        09023705175
-                    </td>
-                </tr>
-                    <td>
-                        1
-                    </td>
-                    <td>
-                        ایلیا
-                    </td>
-                    <td>
-                        امانی
-                    </td>
-                    </td>
-                    <td>
-                        09023705175
-                    </td>
-                </tr>
-                </tr>
-                    <td>
-                        1
-                    </td>
-                    <td>
-                        ایلیا
-                    </td>
-                    <td>
-                        امانی
-                    </td>
-                    </td>
-                    <td>
-                        09023705175
-                    </td>
-                </tr>
-                </tr>
-                    <td>
-                        1
-                    </td>
-                    <td>
-                        ایلیا
-                    </td>
-                    <td>
-                        امانی
-                    </td>
-                    </td>
-                    <td>
-                        09023705175
-                    </td>
-                </tr>
-                </tr>
-                    <td>
-                        1
-                    </td>
-                    <td>
-                        ایلیا
-                    </td>
-                    <td>
-                        امانی
-                    </td>
-                    </td>
-                    <td>
-                        09023705175
-                    </td>
-                </tr>
-                </tr>
-                    <td>
-                        1
-                    </td>
-                    <td>
-                        ایلیا
-                    </td>
-                    <td>
-                        امانی
-                    </td>
-                    </td>
-                    <td>
-                        09023705175
-                    </td>
-                </tr>
-                </tr>
-                    <td>
-                        1
-                    </td>
-                    <td>
-                        ایلیا
-                    </td>
-                    <td>
-                        امانی
-                    </td>
-                    </td>
-                    <td>
-                        09023705175
-                    </td>
-                </tr>
-                </tr>
-                    <td>
-                        1
-                    </td>
-                    <td>
-                        ایلیا
-                    </td>
-                    <td>
-                        امانی
-                    </td>
-                    </td>
-                    <td>
-                        09023705175
-                    </td>
-                </tr>
-                </tr>
-                    <td>
-                        1
-                    </td>
-                    <td>
-                        ایلیا
-                    </td>
-                    <td>
-                        امانی
-                    </td>
-                    </td>
-                    <td>
-                        09023705175
-                    </td>
-                </tr>
-                </tr>
-                    <td>
-                        1
-                    </td>
-                    <td>
-                        ایلیا
-                    </td>
-                    <td>
-                        امانی
-                    </td>
-                    </td>
-                    <td>
-                        09023705175
-                    </td>
-                </tr>
-                </tr>
-                    <td>
-                        1
-                    </td>
-                    <td>
-                        ایلیا
-                    </td>
-                    <td>
-                        امانی
-                    </td>
-                    </td>
-                    <td>
-                        09023705175
-                    </td>
-                </tr>
-                </tr>
-                    <td>
-                        1
-                    </td>
-                    <td>
-                        ایلیا
-                    </td>
-                    <td>
-                        امانی
-                    </td>
-                    </td>
-                    <td>
-                        09023705175
-                    </td>
-                </tr>
-                </tr>
-                    <td>
-                        1
-                    </td>
-                    <td>
-                        ایلیا
-                    </td>
-                    <td>
-                        امانی
-                    </td>
-                    </td>
-                    <td>
-                        09023705175
-                    </td>
-                </tr>
-                </tr>
-                    <td>
-                        1
-                    </td>
-                    <td>
-                        ایلیا
-                    </td>
-                    <td>
-                        امانی
-                    </td>
-                    </td>
-                    <td>
-                        09023705175
-                    </td>
-                </tr>
-                </tr>
-                    <td>
-                        1
-                    </td>
-                    <td>
-                        ایلیا
-                    </td>
-                    <td>
-                        امانی
-                    </td>
-                    </td>
-                    <td>
-                        09023705175
-                    </td>
-                </tr>
-                </tr>
-                    <td>
-                        1
-                    </td>
-                    <td>
-                        ایلیا
-                    </td>
-                    <td>
-                        امانی
-                    </td>
-                    </td>
-                    <td>
-                        09023705175
-                    </td>
-                </tr>
             </tbody>
         </table>
     </div>
     <div id="box2" class="box2">
         <h3 class="d-inline-block">مخاطب جدید</h3>
-        <button type="button" class="btn-close" aria-label="Close"></button>
+        <button type="button" id="btn-close" class="btn-close" aria-label="Close"></button>
         <div class="line"></div>
-        <form class="row row-cols-1 add-form" action="">
+        <form class="row row-cols-1 add-form">
              <div class="form-group col ps-0 mb-4">
                 <input
                     type="text"
@@ -316,7 +88,7 @@
                     >شماره تلفن</label
                 >
             </div>
-            <button class="mybtn col-lg-2 justify-self-center" type="submit">افزودن</button>
+            <button id="add-btn" class="mybtn col-lg-2 justify-self-center" type="button">افزودن</button>
         </form>
     </div>
     <button id="add-person-btn" class="add-person">افزودن مخاطب جدید</button>
