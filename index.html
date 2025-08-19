@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="box1">
+    <div id="box1" class="box1">
         <table>
             <thead>
                 <tr>
@@ -269,53 +269,57 @@
             </tbody>
         </table>
     </div>
-    <div class="box2">
-        <h3>مخاطب جدید</h3>
+    <div id="box2" class="box2">
+        <h3 class="d-inline-block">مخاطب جدید</h3>
+        <button type="button" class="btn-close" aria-label="Close"></button>
         <div class="line"></div>
-        <div class="form-group me-3 mb-3">
-            <input
-                type="text"
-                id="firstname"
-                name="firstname"
-                placeholder=" "
-                required
-            />
-            <label
-                class="mylabel"
-                for="firstname"
-                >نام</label
-            >
-        </div>
-        <div class="form-group me-3 mb-3">
-            <input
-                name="lastname"
-                id="lastname"
-                type="text"
-                required
-                placeholder=" "
-            />
-            <label
-                class="mylabel"
-                for="lastname"
-                >نام خانوادگی</label
-            >
-        </div>
-        <div class="form-group me-3 mb-3">
-            <input
-                name="phonenumber"
-                id="phonenumber"
-                type="text"
-                required
-                placeholder=" "
-            />
-            <label
-                class="mylabel"
-                for="phonenumber"
-                >شماره تلفن</label
-            >
-        </div>
+        <form class="row row-cols-1 add-form" action="">
+             <div class="form-group col ps-0 mb-4">
+                <input
+                    type="text"
+                    id="firstname"
+                    name="firstname"
+                    placeholder=" "
+                    required
+                />
+                <label
+                    class="mylabel"
+                    for="firstname"
+                    >نام</label
+                >
+            </div>
+            <div class="form-group col ps-0 mb-4">
+                <input
+                    name="lastname"
+                    id="lastname"
+                    type="text"
+                    required
+                    placeholder=" "
+                />
+                <label
+                    class="mylabel"
+                    for="lastname"
+                    >نام خانوادگی</label
+                >
+            </div>
+            <div class="form-group col ps-0 mb-4">
+                <input
+                    name="phonenumber"
+                    id="phonenumber"
+                    type="text"
+                    required
+                    placeholder=" "
+                />
+                <label
+                    class="mylabel"
+                    for="phonenumber"
+                    >شماره تلفن</label
+                >
+            </div>
+            <button class="mybtn col-lg-2 justify-self-center" type="submit">افزودن</button>
+        </form>
     </div>
-    <button class="add-person">افزودن مخاطب جدید</button>
+    <button id="add-person-btn" class="add-person">افزودن مخاطب جدید</button>
     <script src="script.js"></script>
 </body>
 </html>
