@@ -58,3 +58,12 @@ app.post("/contacts", (req, res) => {
 app.listen(PORT, () => {
   console.log(`🚀 سرور روی http://localhost:${PORT} اجرا شد`);
 });
+app.delete("/api/contacts/:id", (req, res) => {
+  const { id } = req.params;
+  db.run("DELETE FROM contacts WHERE id = ?", [id], function(err) {
+    if (err) {
+      return res.json({ success: false, message: "خطا در حذف" });
+    }
+    res.json({ success: true });
+  });
+});

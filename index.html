@@ -1,163 +1,157 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>phone book</title>
-    <link rel="stylesheet" href="bootstrap.rtl.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="bootstrap.rtl.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <div id="box1" class="box1">
-        <div class="search-box">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="جستجو..."
-                    />
-                    <button type="button">
-                      <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                  </div>
-        <table>
-            <thead>
-                <tr>
-                    <th>
-                        #
-                    </th>
-                    <th>
-                        نام 
-                    </th>
-                    <th>
-                        نام خانوادگی
-                    </th>
-                    <th>
-                        شماره تلفن
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
+      <div class="search-box">
+        <input type="text" class="form-control" placeholder="جستجو..." />
+        <button type="button">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>نام</th>
+            <th>نام خانوادگی</th>
+            <th>شماره تلفن</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
     </div>
     <div id="box2" class="box2">
+      <div class="row">
+        <div class="col"></div>
         <h3 class="d-inline-block">مخاطب جدید</h3>
-        <button type="button" id="btn-close" class="btn-close" aria-label="Close"></button>
-        <div class="line"></div>
-        <form class="row row-cols-1 add-form">
-             <div class="form-group col ps-0 mb-4">
-                <input
-                    type="text"
-                    id="firstname"
-                    name="firstname"
-                    placeholder=" "
-                    required
-                />
-                <label
-                    class="mylabel"
-                    for="firstname"
-                    >نام</label
-                >
-            </div>
-            <div class="form-group col ps-0 mb-4">
-                <input
-                    name="lastname"
-                    id="lastname"
-                    type="text"
-                    required
-                    placeholder=" "
-                />
-                <label
-                    class="mylabel"
-                    for="lastname"
-                    >نام خانوادگی</label
-                >
-            </div>
-            <div class="form-group col ps-0 mb-4">
-                <input
-                    name="phonenumber"
-                    id="phonenumber"
-                    type="text"
-                    required
-                    placeholder=" "
-                />
-                <label
-                    class="mylabel"
-                    for="phonenumber"
-                    >شماره تلفن</label
-                >
-            </div>
-            <button id="add-btn" class="mybtn col-lg-2 justify-self-center" type="button">افزودن</button>
+        <div class="col">
+          <button
+            type="button"
+            id="btn-close1"
+            class="btn-close"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="row">
+        <form class="row row-cols-1 add-form ms-0">
+          <div class="form-group col ps-0 mb-4">
+            <input
+              type="text"
+              id="firstname"
+              name="firstname"
+              placeholder=" "
+              required
+            />
+            <label class="mylabel" for="firstname">نام</label>
+          </div>
+          <div class="form-group col ps-0 mb-4">
+            <input
+              name="lastname"
+              id="lastname"
+              type="text"
+              required
+              placeholder=" "
+            />
+            <label class="mylabel" for="lastname">نام خانوادگی</label>
+          </div>
+          <div class="form-group col ps-0 mb-4">
+            <input
+              name="phonenumber"
+              id="phonenumber"
+              type="text"
+              required
+              placeholder=" "
+            />
+            <label class="mylabel" for="phonenumber">شماره تلفن</label>
+          </div>
+          <button
+            id="add-btn1"
+            class="mybtn1 col-lg-2 justify-self-center"
+            type="button"
+          >
+            افزودن
+          </button>
         </form>
+      </div>
+    </div>
+    <div id="box3" class="box3 ">
+      <div class="row">
+        <div class="col">
+          <h4>ویرایش مخاطب</h4>
+        </div>
+        <div class="col">
+          <button
+            type="button"
+            id="btn-close2"
+            class="btn-close"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="row">
+        <form class="row row-cols-1 add-form ms-0">
+          <div class="form-group col ps-0 mb-4">
+            <input
+              type="text"
+              id="firstname-edit"
+              name="firstname-edit"
+              placeholder=" "
+              required
+            />
+            <label class="mylabel" for="firstname-edit">نام</label>
+          </div>
+          <div class="form-group col ps-0 mb-4">
+            <input
+              name="lastname-edit"
+              id="lastname-edit"
+              type="text"
+              required
+              placeholder=" "
+            />
+            <label class="mylabel" for="lastname-edit">نام خانوادگی</label>
+          </div>
+          <div class="form-group col ps-0 mb-4">
+            <input
+              name="phonenumber-edit"
+              id="phonenumber-edit"
+              type="text"
+              required
+              placeholder=" "
+            />
+            <label class="mylabel" for="phonenumber-edit">شماره تلفن</label>
+          </div>
+          <button
+            id="add-btn2"
+            class="mybtn2 col-lg-2 justify-self-center"
+            type="button"
+          >
+            ویرایش
+          </button>
+          <button
+            id="add-btn3"
+            class="mybtn3 col-lg-2 justify-self-center"
+            type="button"
+          >
+            حذف مخاطب
+          </button>
+        </form>
+      </div>
     </div>
     <button id="add-person-btn" class="add-person">افزودن مخاطب جدید</button>
-    <script src="script.js">const box2 = document.getElementById("box2");
-const addPersonBtn = document.getElementById("add-person-btn");
-const btnClose = document.getElementById("btn-close");
-const addBtn = document.getElementById("add-btn");
-const firstName = document.getElementById("firstname");
-const lastName = document.getElementById("lastname");
-const phoneNumber = document.getElementById("phonenumber");
-const newPerson = document.querySelector(".box1 table tbody");
-const search = document.querySelector(".search-box input");
-let newItem = 1;
-function add(){
-      if(firstName.value == "" || lastName.value == "" || phoneNumber.value == ""){
-        alert("لطفا همه فیلد هارا پر کنید");
-    } else{
-        newPerson.insertAdjacentHTML("beforeend",`
-        <tr>
-            <td>
-               ${newItem++}
-            </td>
-            <td>
-                 ${firstName.value}
-            </td>
-            <td>
-                 ${lastName.value}
-            </td>
-            <td>
-                 ${phoneNumber.value}
-            </td>
-        </tr>`);
-        firstName.value = "";
-        lastName.value = "";
-        phoneNumber.value = "";
-       box2.classList.remove("show") 
-    }
-}
-addPersonBtn.addEventListener("click", function(){
-    box2.classList.add("show")
-    firstName.focus();
-});
-btnClose.addEventListener("click", function(){
-    box2.classList.remove("show")
-});
-document.body.addEventListener("click", function(e){
-   if(e.target === search || e.target === document.body){
-    box2.classList.remove("show")
-   }
-});
-addBtn.addEventListener("click",add);
-box2.addEventListener("keyup",function(e){
-    if(e.key === "Enter"){
-        add();
-    };
-});
-search.addEventListener("keyup", function () {
-  let value = this.value.toLowerCase();
-  let rows = newPerson.querySelectorAll("tr");
-  
-  rows.forEach(row => {
-    let text = row.textContent.toLowerCase();
-    if (text.includes(value)) {
-      row.style.display = "";
-    } else {
-      row.style.display = "none";
-    }
-  });
-});
-</script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

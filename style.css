@@ -45,6 +45,7 @@ tbody tr:nth-child(even){
 tr:hover{
     background-color: #bbb !important;
     color:#000;
+    cursor: pointer;
 }
 .add-person{
     position: fixed;
@@ -62,7 +63,7 @@ tr:hover{
     visibility: hidden;
     opacity: 0;
     padding: 20px;
-    width: 50%;
+    width: 60%;
     position:fixed;
     top: 200px;
     background:hsla(0, 0%, 100%, 0);
@@ -70,10 +71,6 @@ tr:hover{
     color: #fff;
     border: 1px solid #fff;
     border-radius: 10px;
-}
-.show{
-    visibility: visible;
-    opacity: 1;
 }
 .line{
     margin: 20px 0px;
@@ -145,7 +142,7 @@ tr:hover{
 .form-group input:focus:hover + .mylabel{
     background-color: #aaa;
 }
-.mybtn{
+.mybtn1{
     margin:0 auto;
     margin-top: 8px;
     border: none;
@@ -155,7 +152,7 @@ tr:hover{
     border-radius: 5px;
     box-shadow: 3px 3px #000;
 }
-.mybtn:hover{
+.mybtn1:hover{
     background-color: #999;
 }
 .btn-close{
@@ -190,4 +187,47 @@ tr:hover{
 }
 .search-box button:hover {
     color: #000;
+}
+.box3{
+    visibility: hidden;
+    opacity: 0;
+    padding: 20px;
+    width: 50%;
+    position:fixed;
+    top: 200px;
+    background:hsla(0, 0%, 100%, 0);
+    backdrop-filter:blur(13px);
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+.mybtn2{
+    margin:0 auto;
+    margin-top: 8px;
+    border: none;
+    padding: 1px 11px 3px 10px;
+    color: #000;
+    background-color: #bbb;
+    border-radius: 5px;
+    box-shadow: 3px 3px #000;
+}
+.mybtn2:hover{
+    background-color: #999;
+}
+.mybtn3{
+    margin:0 auto;
+    margin-top: 8px;
+    border: none;
+    padding: 1px 11px 3px 10px;
+    color: #fff;
+    background-color: #444;
+    border-radius: 5px;
+    box-shadow: 3px 3px #000;
+}
+.mybtn3:hover{
+    background-color: #222;
+}
+.show{
+    visibility: visible;
+    opacity: 1;
 }
