@@ -21,9 +21,12 @@ table{
     width: 100%;
     margin-top: 50px;
     margin-bottom: 50px;
-    border: 1px solid #000;
-    border-radius: 1;
+    border:none;
+    border-radius: 30px;
+    box-shadow: 6px 6px #000;
     color: #ddd;
+    transition: all 1s;
+    overflow: hidden;
 }
 th{
     background-color: #111;
@@ -38,12 +41,17 @@ td{
 }
 tbody tr:nth-child(odd){
     background-color: #555;
+        transition: all 0.35s;
+
 }
 tbody tr:nth-child(even){
     background-color: #333;
+        transition: all 0.35s;
+
 }
-tr:hover{
+tbody tr:hover{
     background-color: #bbb !important;
+    box-shadow: 0px 0px 50px #ccc;
     color:#000;
     cursor: pointer;
 }
